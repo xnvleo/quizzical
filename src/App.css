@@ -1,0 +1,107 @@
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #293264;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1em;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  border-radius: 15px;
+  border: none;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  font-weight: 700;
+}
+
+.btn-link,
+.btn-submit {
+  background: #4d5b9e;
+  color: #f5f7fb;
+  padding: 1em 1.5em;
+}
+
+.btn-submit {
+  align-self: center;
+  margin: 1em 0;
+  font-size: 0.7rem;
+}
+.btn-answer {
+  background: #f5f7fb;
+  color: #293264;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 7.942px;
+  border: 0.794px solid #4d5b9e;
+  padding: 0.5em 1.5em;
+}
+.btn-answer:hover,
+.btn-answer:focus {
+  background: #d6dbf5;
+  border: none;
+}
+
+.container-quiz {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 1.5em 0;
+  border-bottom: 1px solid #dbdef0;
+}
+
+.answer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.resultDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loading-error {
+  margin: 5em 2em auto 2em;
+  text-align: center;
+}
+
+
+button:disabled {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .container-quiz {
+    max-width: 700px;
+  }
+}

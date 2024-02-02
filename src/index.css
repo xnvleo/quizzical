@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f5f7fb;
+  font-family: "Karla", "Inter", sans-serif;
+  background-image: url(assets/blob_yellow.png), url(assets/blob_blue.png);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
