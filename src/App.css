@@ -21,7 +21,6 @@ p {
   justify-content: center;
   height: 100vh;
   gap: 1em;
-  margin-bottom: 1em;
 }
 
 .btn {
@@ -39,17 +38,26 @@ p {
 }
 
 .btn-link,
-.btn-submit {
+.btn-submit,
+.btn-restart {
   background: #4d5b9e;
   color: #f5f7fb;
   padding: 1em 1.5em;
 }
 
 .btn-submit {
-  align-self: center;
   margin: 2em 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+
+  text-align: center;
 }
+.btn-restart {
+  font-size: 0.7rem;
+  text-align: center;
+  width: 100%;
+}
+
+
 .btn-answer {
   background: #f5f7fb;
   color: #293264;
@@ -70,7 +78,7 @@ p {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .card {
@@ -86,7 +94,7 @@ p {
 
 .resultDiv {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items:center ;
 }
 
@@ -102,8 +110,23 @@ button:disabled {
   cursor: not-allowed;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .container-quiz {
     max-width: 700px;
+  }
+
+  .resultDiv {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center ;
+    margin:1.5em 0;
+  }
+
+  .btn-submit {
+  align-self: center;
+    text-align: center;
+  }
+  .btn-restart {
+    width: 25%;
   }
 }

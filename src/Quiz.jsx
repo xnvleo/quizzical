@@ -183,7 +183,7 @@ const Quiz = () => {
       {!show && (
         <div className="resultDiv">
           <h3>Your scored {score}/5 correct answers</h3>
-          <Link to="/" className="btn btn-submit">
+          <Link to="/" className="btn btn-restart">
             play again
           </Link>
         </div>
